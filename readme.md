@@ -36,11 +36,6 @@ $ docker compose up -d
 $ docker cp gov-proxy:/root/.mitmproxy/mitmproxy-ca-cert.pem ./ca.pem
 ```
 
-Используем имя контейнера для копирования сгенерированного се$ podman container ls
-
-CONTAINER ID  IMAGE                       COMMAND               CREATED            STATUS            PORTS                   NAMES
-3e243342e15c  localhost/gov-proxy:latest  mitmdump --listen...  About an hour ago  Up About an hour  0.0.0.0:8080->8080/tcp  gov-proxy
-
 Файл ca.pem - это и есть сертификат нашей прокси. Теперь этот его нужно добавить в браузер. Для этого есть два варианта:
 
 1. Установить его как корневой сертификат операционной системы.
