@@ -1,0 +1,7 @@
+services:
+  gov-proxy:
+    build: .
+    container_name: me-in-the-middle
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
